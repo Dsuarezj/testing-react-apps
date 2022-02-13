@@ -8,13 +8,13 @@
   "license": "GPL-3.0",
   "main": "index.js",
   "engines": {
-    "node": "12 || 14 || 15 || 16",
+    "node": "12 || 14 || 15 || 16 || 17",
     "npm": ">=6"
   },
   "scripts": {
-    "build": "react-scripts build",
-    "start": "react-scripts start",
-    "test": "react-scripts test",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    "test": "NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
     "test:coverage": "npm run test -- --watchAll=false",
     "test:exercises": "npm run test -- testing.*exercises\\/ --onlyChanged",
     "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
