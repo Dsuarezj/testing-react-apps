@@ -12,9 +12,9 @@
     "npm": ">=6"
   },
   "scripts": {
-    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
-    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
-    "test": "NODE_OPTIONS=--openssl-legacy-provider react-scripts test",
+    "build": "node reactScripts.js build",
+    "start": "node reactScripts.js start",
+    "test": "node reactScripts.js test",
     "test:coverage": "npm run test -- --watchAll=false",
     "test:exercises": "npm run test -- testing.*exercises\\/ --onlyChanged",
     "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
